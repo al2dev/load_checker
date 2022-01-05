@@ -43,7 +43,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('path', nargs='+', type=str, help='Path to process file')
     parser.add_argument('process', nargs='+', type=str, help='Name of process')
-    parser.add_argument('interval', nargs='+', type=int, help='Query interval in seconds')
+    parser.add_argument('interval', nargs='+', type=float, help='Query interval in seconds')
     parser.add_argument('--log', nargs='?', type=str, help='path to log')
     args = parser.parse_args()
 
